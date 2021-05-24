@@ -1,62 +1,96 @@
 <!DOCTYPE html>
 <html>
-    <link href="Style.css" rel="stylesheet" type="text/css"/>
+    
 <head>
     <meta charset = "utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- Google Font -->
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;800&display=swap"
- rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
  <!-- Favicon -->
  <link rel = "icon" href ="faviconn.png" 
 type = "image/x-icon">
 
-<!-- Glidejs carousel -->
-<link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
-
-<link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
-<!-- Animate On Scroll -->
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <!-- StyleSheet -->
 <link rel="stylesheet" href="styles.css">
+
 <title> MySite🌸 </title>
 
+<!-- Social Media İcons -->
+<script src="https://kit.fontawesome.com/8628b98ad7.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
+   
 
-<div class="header">
-<div class="inner_header">
-<div class="logo_container">
-<h1>
-    MY<span>SITE</span>
-</h1>
+<nav>
+<div class="logo">
+<h4>
+ <a href="index.html"></a> MY<span>SITE</span> </h4>
 </div>
-<ul class="navagation">
-<a> <li> HOME</li></a>
-<a> <li> ABOUT</li></a>
-<a> <li> BLOG </li></a>
-<a> <li> CONTACT</li></a>
+
+<ul class="nav_links">
+<li class="active"><a href="#header">Home</a> </li>
+<li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
+<li><a href="#project">Projects</a></li>
 </ul>
+
+<div class="burger">
+<div class="line1"></div>    
+<div class="line2"></div>  
+<div class="line3"></div>  
 </div>
+</nav>
+
+
+<!-- Header -->
+<header id="header" class="header-top">
+    <div class="container">
+        <div class="box"> 
+        <h1 class="name"> MY NAME IS <span>LEYLA MATAR</span> </h1>
+        <h2 class="about-me">IM A <span><strong>CUMPUTER ENGINERRING</strong> STUDENT</span> </h2>
+      
+    </div>
 </div>
+</header>
+<!-- About -->
+<section id="about" class="about">
+    <div class="about-me container">
+        <div class="section-title">
+            <h3 class="aboutt">About</h3>
+            <p>Learn more about me </p>
+            <h3>üniversite öğrencisi</h3>
+            <p class="paragraf">buraya bir paragraf gelcek</p>
+        </div>
+            <div class="row">
+                <div class="col-lg-4" data-aos="fade-right">
+                    <img class="flower" src="background.jpg" alt="deneme2">
+                </div>
+<div class="col-lg-8 pt-lg pt-lg-0 content" data-aos="fade-left"> </div>
+            
+
+        </div>
+    </div>
+</section>
 
 
+<!--Social link-->
+<div class="social-links">
+<a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+<a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+<a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+<a href="#" class="github"><i class="fab fa-github"></i></a>
+<a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
 
 
+</div>
+ 
 
-
-
-
-<!-- Glidejs -->
-<script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
-<!-- AOS -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 <!-- script -->
-<script src="./js/index.js"></script>
-<script src="./js/products.js"></script>
-<script src="./js/slider.js"></script>
+<script src="index.js"></script>
+
 
 </body>
 </html>
