@@ -5,6 +5,7 @@
     
 }
 body{
+    
     font-family: 'Oswald', sans-serif;
     background-color: #ece3e2;
     position: relative;
@@ -21,7 +22,7 @@ body{
     font-size: 20px;
     background-color: #f0d9c6;
     color:#000000 ;
-  
+  width: min(90%, 70,5rem);
     
 }
 .flower{
@@ -73,7 +74,9 @@ nav{
     color: wheat;
     text-decoration: none;
 }
-
+header, section{
+    padding: 3rem 0;
+}
 .burger{
     display: none;
     cursor: pointer;
@@ -189,7 +192,7 @@ nav{
     left: 90px;
     top: 488px;
     right: 0px;
-    width: 300px;
+    width: 400px;
     height: 100px;
     color: rgb(177, 114, 114);
 }
@@ -213,20 +216,19 @@ nav{
     }
 }
 .fab{
-    
     font-size: 20px;
     display: inline-flex;
     text-decoration: none;
     color: rgb(177, 114, 114);
     padding: 10px 10px;
     margin: 0 7px; 
-    
     justify-content: center;
     width: 40px;
     height: 40px;
     align-items: center;
     border-radius: 50px;
     transition: 0.3s;
+    z-index: 1;
 }
 .fab:hover {
     color: rgb(221, 155, 155);
@@ -235,20 +237,358 @@ nav{
 }
 /* --About --*/
 .about-me .contact h3{
-
 font-weight: 700;
 font-size: 36px;
-color: rgb(190, 135, 113);
+color: rgb(185, 75, 31);
 
+}
+#about .section-title {
+    position:absolute;
+    color: rgb(104, 71, 58);
+    left: 76px;
+    font-size: 35px;
+    }
+.about-me p{
+    
+    margin-left: 50px;
+    color: rgb(104, 31, 85);
+    font-size: 20px;
 }
 .about-me .content ul{
     list-style: none;
     padding: 0;
 }
 
-#about .section-title {
+#about .section-title .aboutt {
 position:absolute;
 color: rgb(190, 135, 113);
 left: 76px;
 font-size: 35px;
+}
+#about .section-title .aboutt:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(105, 64, 64);
+}
+
+#skills .mh-professional-skill{
+    position: center;
+    margin-top: 100px;
+    margin: 50px ;
+    width: 1190px;
+    height: 600px;
+    padding-right: 200px;
+    color: rgb(190, 135, 113);
+    background-color: rgb(207, 171, 171);
+}
+#skills .mh-professional-skill  h2{
+    
+    margin-top: 590px;
+    font-size: 30px;
+    line-height: 50px;
+    left: 50px;
+    font-weight: 1000;
+    font-size: 30px;
+    margin-bottom: 50px;
+    font-family: 'Oswald', sans-serif;
+}
+#skills h2{
+    position: relative;
+    top: 20px;
+    font-size: 50px;
+}
+.candidatos{
+    position: relative;
+    margin-bottom: 20px;
+    color: rgb(245, 245, 245);
+    font-family: 'Oswald', sans-serif;
+}
+.candidatos .parcial{
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+}
+.candidatos .parcial .info{
+    position: relative;
+    font-family: 'Oswald', sans-serif;
+}
+.candidatos .parcial .info .name{
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    opacity: 0,9;
+    font-family: 'Oswald', sans-serif;
+}
+.candidatos .parcial .info .percentage-num{
+    position: absolute;
+    margin: 17px 110px;
+    top: 0;
+    right: 90px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: normal;
+
+}
+.candidatos .parcial .progressBar{
+    position: relative;
+    width: 60%;
+    left: 150px;
+    height: 10px;
+    margin: 30px 0 2px;
+    border-radius: 10px;
+    background: #000000;
+}
+.candidatos .parcial .percentagem{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 10px;
+    float: right;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: #a16c6c;
+    transition: 0.9s all;
+    animation-name: animationProgress;
+    font-family: 'Oswald', sans-serif;
+}
+@keyframes animationProgress{
+    from{
+        width: 0;
+    }
+    
+}
+.skills h2:hover{
+    padding: 0;
+    color: rgb(255, 255, 255);
+    background-color: rgb(105, 64, 64);
+}
+ .contact{
+display: flex;
+align-items: center;
+min-height: 100vh;
+margin: 20px 100px 80px 50px;
+padding: 200px;
+z-index: -1;
+background-color: rgb(243, 197, 227) ;
+
+}
+#contact .container{
+    position: absolute;
+    right: 0;
+    left: 80px;
+    width: 400px;
+    height: 510px;
+    background: rgb(235, 198, 205);
+    z-index: 1;
+    padding: 40;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 20px 25px rgb(247, 238, 238);
+}
+.container .contactInfo h2{
+    position: relative;
+    left: 50px;
+    color: rgb(255, 255, 255);
+    font-size: 34px;
+    font-weight: 700;
+}
+.container .contactInfo ul.info{
+    position: relative;
+    margin: 20px o;
+}
+.container .contactInfo ul.info li{
+position: relative;
+left: 30px;
+list-style: none;
+display: flex;
+margin: 20px 0;
+cursor: pointer;
+align-items: flex-start;
+}
+.container .contactInfo ul.info li span:nth-child(1){
+    width: 40px;
+    min-width: 40px;
+}
+.container .contactInfo ul.info li span:nth-child(1) img{
+    max-width: 100%;
+    filter: invert(1);
+}
+.container .contactInfo ul.info li span:nth-child(2){
+    color: rgb(255, 255, 255);
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 20px;
+    font-family:'Oswald', sans-serif ;
+}
+.container .contactInfo ul.socialMedia {
+    position: relative;
+    margin-top: 150px;
+    margin-left: 20px;
+    
+}
+.container .contactForm {
+    position: absolute;
+    padding-left: 400px;
+    margin:50px;
+    width: 1100px;
+    color: rgb(255, 235, 235);
+    
+}
+.container .contactForm h2{
+    position: relative;
+   
+    color: rgb(248, 223, 223);
+    font-size: 30px;
+    font-weight: 500;
+}
+.container .contactForm .formBox{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+.container .contactForm .formBox .inputBox{
+    position:relative;
+    margin-bottom: 35px;
+}
+.container .contactForm .formBox .inputBox.w50{
+    width: 47%;
+}
+.container .contactForm .formBox .inputBox.w100{
+    width: 100%;
+}
+.container .contactForm .formBox .inputBox input,
+.container .contactForm .formBox .inputBox textarea
+{
+    width: 100%;
+    resize: none;
+    padding: 5px 0px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #000000;
+    
+    outline: none;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+.container .contactForm .formBox .inputBox textarea{
+    height: 120px;
+}
+.container .contactForm .formBox .inputBox span{
+    position: absolute;
+    left: 10px;
+    color: rgb(0, 0, 0);
+    padding: 5px 0px;
+    pointer-events: none;
+    font-size: 15px;
+    font-weight: 300;
+    transition: 0.3s;
+}
+.container .contactForm .formBox .inputBox input:focus ~ span,
+.container .contactForm .formBox .inputBox input:valid ~ span,
+.container .contactForm .formBox .inputBox textarea:focus ~ span,
+.container .contactForm .formBox .inputBox textarea:valid ~ span{
+
+    transform: translateY(-30px);
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: rgb(29, 0, 44);
+    font-weight: 500;
+}
+.container .contactForm .formBox .inputBox input[type="submit"]{
+    position: relative;
+    cursor: pointer;
+    background: rgb(131, 71, 103);
+    border: none;
+    max-width: 150px;
+    padding: 12px;
+}
+.container .contactForm .formBox .inputBox input[type="submit"]:hover{
+    background:blanchedalmond ;
+}
+@media(max-width : 1200px){
+    .container{
+        width: 90%;
+        min-width: auto;
+        margin: 20px;
+        box-shadow: 0 20px 50px rgb(130, 139, 121);
+    }
+    .container .contactInfo{
+        top: 0;
+        height: 550px;
+        position: relative;
+        box-shadow: none;
+    }
+    .container .contactForm{
+        position: relative;
+        width: calc(100% - 350px);
+        padding-left: 0px;
+        margin-left: 0px;
+        height: 550px;
+        box-shadow: none;
+    
+    }
+}
+@media (max-width : 991px){
+    
+    section::before{
+        display: none;
+    }
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .container .contactForm{
+
+        width: 100%;
+        height: auto;
+    }
+    .container .contactInfo{
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+    }
+    .container .contactInfo ul.socialMedia{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (max-width : 600px){
+    .container .contactForm{
+        padding: 25px;
+    }
+.container .contactInfo{
+    padding: 25px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.container .contactInfo ul.socialMedia{
+    margin-top: 40px;
+}
+.container .contactForm .formBox .inputBox.w50{
+    width: 100%;
+}
+}
+.skills{
+    display: flex;
+    flex-direction:row ;
+}
+@media (min-width :40em){
+.skills{
+    flex-direction: row;
+}
+.skills > *{
+    flex-basis: 100%;
+}
+.skills > * + *{
+    margin-left: 2em;
+}
 }
