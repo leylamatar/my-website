@@ -10,6 +10,7 @@ body{
     background-color: #ece3e2;
     position: relative;
 }
+
 .body::before{
     content: "";
     position: fixed;
@@ -372,7 +373,7 @@ min-height: 100vh;
 margin: 20px 100px 80px 50px;
 padding: 200px;
 z-index: -1;
-background-color: rgb(243, 197, 227) ;
+background-color: rgb(255, 229, 219) ;
 
 }
 #contact .container{
@@ -381,7 +382,7 @@ background-color: rgb(243, 197, 227) ;
     left: 80px;
     width: 400px;
     height: 510px;
-    background: rgb(235, 198, 205);
+    background: rgb(19, 17, 18);
     z-index: 1;
     padding: 40;
     display: flex;
@@ -504,7 +505,7 @@ align-items: flex-start;
 .container .contactForm .formBox .inputBox input[type="submit"]{
     position: relative;
     cursor: pointer;
-    background: rgb(131, 71, 103);
+    background: rgb(109, 28, 71);
     border: none;
     max-width: 150px;
     padding: 12px;
